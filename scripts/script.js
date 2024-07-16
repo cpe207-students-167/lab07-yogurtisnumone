@@ -98,7 +98,7 @@ submitBtn.onclick = () => {
     confirmPasswordInput.classList.add("is-valid");
     isConfirmPasswordOk = true;
   }
-  if (isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && isConfirmPasswordOk) {
+  if (isFirstNameOk && isLastNameOk && isEmailOK && isPasswordOk && isConfirmPasswordOk) {
     alert("Registered successfully");
   }
 };
