@@ -57,11 +57,11 @@ confirmPasswordInput.onkeyup = () => {
 
 // add callback function for submit button.
 submitBtn.onclick = () => {
-  isFirstNameOk = false;
-  isLastNameOk = false;
-  isEmailOK = false;
-  isPasswordOk = false;
-  isConfirmPasswordOk = false;
+  let isFirstNameOk = false;
+  let isLastNameOk = false;
+  let isEmailOK = false;
+  let isPasswordOk = false;
+  let isConfirmPasswordOk = false;
   // validate first name
   if (firstNameInput.value === "") {
     firstNameInput.classList.add("is-invalid");
