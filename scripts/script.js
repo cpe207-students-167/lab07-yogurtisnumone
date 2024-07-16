@@ -7,7 +7,7 @@ const confirmPasswordInput = document.querySelector("#password-confirm-input");
 
 // create reference for buttons.
 const submitBtn = document.querySelector("#submit-btn");
-const clearBtn = document.querySelector("#reset-btn");
+const resetBtn = document.querySelector("#reset-btn");
 
 // simple email validation
 function validateEmail(email) {
@@ -84,7 +84,9 @@ submitBtn.onclick = () => {
     confirmPasswordInput.classList.add("is-valid");
     isConfirmPasswordOk = true;
   }
-  if (isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && isConfirmPasswordOk) alert("Registered successfully");
+  if (isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && isConfirmPasswordOk) {
+    alert("Registered successfully");
+  }
 };
 
 // add callback function for Reset button.
