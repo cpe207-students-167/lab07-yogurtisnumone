@@ -69,7 +69,7 @@ submitBtn.onclick = () => {
     isLastNameOk = true;
   }
   // validate email
-  if (emailInput.value === "" || !validateEmail(emailInput.value)) {
+  if (validateEmail(emailInput.value) === false) {
     emailInput.classList.add("is-invalid");
   } else {
     emailInput.classList.add("is-valid");
@@ -83,7 +83,7 @@ submitBtn.onclick = () => {
     isPasswordOk = true;
   }
   // validate confirm password
-  if (confirmPasswordInput.value === "" || confirmPasswordInput.value !== passwordInput.value) {
+  if (confirmPasswordInput.value === "" || confirmPasswordInput.value.length < 6 || confirmPasswordInput.value !== passwordInput.value) {
     confirmPasswordInput.classList.add("is-invalid");
   } else {
     confirmPasswordInput.classList.add("is-valid");
