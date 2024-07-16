@@ -90,7 +90,7 @@ submitBtn.onclick = () => {
 };
 
 // add callback function for Reset button.
-clearBtn.onclick = () => {
+resetBtn.onclick = () => {
   firstNameInput.value = "";
   lastNameInput.value = "";
   emailInput.value = "";
