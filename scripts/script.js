@@ -41,7 +41,7 @@ passwordInput.onkeyup = () => {
 
 confirmPasswordInput.onkeyup = () => {
   confirmPasswordInput.classList.remove("is-valid");
-  firstNameInput.classList.remove("is-invalid");
+  confirmPasswordInput.classList.remove("is-invalid");
 };
 
 
