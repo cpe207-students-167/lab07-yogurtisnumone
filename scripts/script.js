@@ -44,10 +44,8 @@ passwordInput.onkeyup = () => {
 };
 
 confirmPasswordInput.onkeyup = () => {
-  clearValidationStyles(confirmPasswordInput);
-  if (confirmPasswordInput.value !== "" && confirmPasswordInput.value === passwordInput.value) {
-    confirmPasswordInput.classList.add("is-valid");
-    confirmPasswordInput.classList.remove("is-invalid");
+  confirmPasswordInput.classList.remove("is-valid");
+  confirmPasswordInput.classList.remove("is-invalid");
   } else {
     confirmPasswordInput.classList.add("is-invalid");
     confirmPasswordInput.classList.remove("is-valid");
